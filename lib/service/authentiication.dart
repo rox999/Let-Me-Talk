@@ -6,6 +6,8 @@ class AuthService {
 
   FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
 
+  Stream get authChange => _firebaseAuth.authStateChanges();
+
   //register function
   Future registerWithEmailAndPassword(String email, String pass) async {
     try {
@@ -13,10 +15,10 @@ class AuthService {
           .createUserWithEmailAndPassword(email: email, password: pass);
       User _user = _userCredential.user;
       print("User has been registered");
-      return _user;
+      return "SUCCESS_FULL";
     } catch (e) {
       print(e.toString());
-      return null;
+      return 'REGISTRATION FAILED';
     }
   }
 
@@ -27,15 +29,15 @@ class AuthService {
           .signInWithEmailAndPassword(email: email, password: pass);
       User _user = _userCredential.user;
       print("user sign in");
-      return _user;
+      return "SUCCESS_FULL";
     } catch (e) {
       print(e.toString());
-      return null;
+      return 'REGISTRATION FAILED';
     }
   }
   
   //sign out
-  Future<String> signOut(String email,String password) async {
+  Future<String> signOut() async {
       try {
         _firebaseAuth.signOut();
         return "SIGN_OUT";
@@ -49,7 +51,6 @@ class AuthService {
   Future<UserDetail> get userDetail async{
    return await UserDatabase().getUserDetail();
   }
-
 
 
 }
