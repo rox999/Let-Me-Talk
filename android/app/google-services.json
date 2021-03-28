@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "828746209810",
+    "project_id": "let-me-talk-1a63c",
+    "storage_bucket": "let-me-talk-1a63c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:828746209810:android:d45e2f29d9897dfcf256cb",
+        "android_client_info": {
+          "package_name": "com.example.let_me_talk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "828746209810-h2rsc11hhphgcham17nnmh3j01uqhojc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAww_YQoj-LC2wuu20PacmKPWqAPxrfYDA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "828746209810-h2rsc11hhphgcham17nnmh3j01uqhojc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -11,7 +11,7 @@ import 'package:integration_test/integration_test.dart';
 
 import 'package:let_me_talk/main.dart' as app;
 
-void main() => run(_testMain);
+void main() => runApp(Container());
 
 void _testMain() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
